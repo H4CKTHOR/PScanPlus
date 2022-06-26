@@ -67,7 +67,7 @@ def main():
     targetHost = options.targetHost
     targetPorts = str(options.targetPort).split(",")
     if (targetHost == None) or (targetPorts[0] == None):
-        print(parser.Info)
+        print(parser.usage)
         exit(0)
     hostScan(targetHost,targetPorts)
 
