@@ -60,7 +60,7 @@ def hostScan(targethost,targetports):
             print("<Xeta!>")
 
 def main():
-    parser = optparse.OptionParser("python3 Pscan+.py -H <adress> -p <port>")
+    parser = optparse.OptionParser("python3 Pscan+.py --help")
     parser.add_option("-H", dest="targetHost", type="string", help="Hedef Ip Adress")
     parser.add_option("-p", dest="targetPort", type="string", help="(,) veya (,)'süz port yaz!")
     (options,args) = parser.parse_args()
